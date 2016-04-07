@@ -8,4 +8,22 @@ A self-taught project to learn Swift.
 
 ## Project Index & GIF Showcase ##
 
-Project 01 - [SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2001%20-%20SimpleStopWatch/Simple%20Stop%20Watch.gif)
+Project 01 - ![SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2001%20-%20SimpleStopWatch/Simple%20Stop%20Watch.gif)
+
+## What's next? ##
+
+Build a camera app.
+
+## License ##
+
+[30 Days Of Swift](https://github.com/CoderYLiu/30DaysOfSwift) is under the MIT license.
+
+## Reach me ##
+
+简书: [冰晨](http://www.jianshu.com/users/455a0339b2c3/latest_articles)
+
+Weibo: [@程序猿冰晨](http://weibo.com/lycoder)
+
+Facebook: [Sunny Liu](https://www.facebook.com/CoderYliu)
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CoderYLiu/30daysOfswift/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
