@@ -8,4 +8,4 @@ A self-taught project to learn Swift.
 
 ## Project Index & GIF Showcase ##
 
-Project 01 - [SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/tree/master/Project%2001%20-%20SimpleStopWatch)
+Project 01 - [SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2001%20-%20SimpleStopWatch/Simple%20Stop%20Watch.gif)
