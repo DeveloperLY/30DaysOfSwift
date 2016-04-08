@@ -10,7 +10,7 @@ A self-taught project to learn Swift.
 
 Project 01 - ![SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2001%20-%20SimpleStopWatch/Simple%20Stop%20Watch.gif)
 
-Project 02 - ![Customfont](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2002%20-%20Customfont/Customfont.gif)
+Project 02 - ![Customfont](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2002%20-%20CustomFont/Customfont.gif)
 
 ## What's next? ##
 
