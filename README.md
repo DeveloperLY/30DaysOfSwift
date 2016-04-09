@@ -12,6 +12,9 @@ Project 01 - ![SimpleStopWatch](https://github.com/CoderYLiu/30DaysOfSwift/blob/
 
 Project 02 - ![Customfont](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2002%20-%20CustomFont/Customfont.gif)
 
+Project 03 - ![PlayLocalVideo](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2003%20-%20PlayLocalVideo/PlayLocalVideo.gif)
+
+
 ## What's next? ##
 
 Build a camera app.
