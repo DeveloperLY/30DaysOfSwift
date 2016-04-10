@@ -14,6 +14,7 @@ Project 02 - ![Customfont](https://github.com/CoderYLiu/30DaysOfSwift/blob/maste
 
 Project 03 - ![PlayLocalVideo](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2003%20-%20PlayLocalVideo/PlayLocalVideo.gif)
 
+Project 04 - ![SnapChatMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2004%20-%20SnapChatMenu/SnapChatMenu.gif)
 
 ## What's next? ##
 
