@@ -16,6 +16,8 @@ Project 03 - ![PlayLocalVideo](https://github.com/CoderYLiu/30DaysOfSwift/blob/m
 
 Project 04 - ![SnapChatMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2004%20-%20SnapChatMenu/snapchatmenu.gif)
 
+Project 05 - ![CarouselEffect](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2005%20-%20CarouselEffect/CarouselEffect.gif)
+
 ## What's next? ##
 
 Build a camera app.
