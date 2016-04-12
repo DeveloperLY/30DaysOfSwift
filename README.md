@@ -18,6 +18,8 @@ Project 04 - ![SnapChatMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/mas
 
 Project 05 - ![CarouselEffect](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2005%20-%20CarouselEffect/CarouselEffect.gif)
 
+Project 06 - ![FindMyLocation](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2006%20-%20FindMyLocation/FindMyLocation.gif)
+
 ## What's next? ##
 
 Build a camera app.
