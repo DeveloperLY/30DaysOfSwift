@@ -20,6 +20,8 @@ Project 05 - ![CarouselEffect](https://github.com/CoderYLiu/30DaysOfSwift/blob/m
 
 Project 06 - ![FindMyLocation](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2006%20-%20FindMyLocation/FindMyLocation.gif)
 
+Project 07 - ![PullToRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2007%20-%20PullToRefresh/PullToRefresh.gif)
+
 ## What's next? ##
 
 Build a camera app.
