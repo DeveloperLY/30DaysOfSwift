@@ -22,6 +22,8 @@ Project 06 - ![FindMyLocation](https://github.com/CoderYLiu/30DaysOfSwift/blob/m
 
 Project 07 - ![PullToRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2007%20-%20PullToRefresh/PullToRefresh.gif)
 
+Project 09 - ![RandomColorization](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2008%20-%20RandomGradientColorMusic/RandomColorization.gif)
+
 ## What's next? ##
 
 Build a camera app.
