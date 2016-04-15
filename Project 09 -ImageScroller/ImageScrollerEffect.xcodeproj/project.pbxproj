@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD72A7091CC128DD00CC8376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72A7081CC128DD00CC8376 /* AppDelegate.swift */; };
+		CD72A70B1CC128DD00CC8376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72A70A1CC128DD00CC8376 /* ViewController.swift */; };
+		CD72A70E1CC128DD00CC8376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD72A70C1CC128DD00CC8376 /* Main.storyboard */; };
+		CD72A7101CC128DD00CC8376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD72A70F1CC128DD00CC8376 /* Assets.xcassets */; };
+		CD72A7131CC128DD00CC8376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD72A7111CC128DD00CC8376 /* LaunchScreen.storyboard */; };
+		CD72A71E1CC128DD00CC8376 /* ImageScrollerEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72A71D1CC128DD00CC8376 /* ImageScrollerEffectTests.swift */; };
+		CD72A7291CC128DD00CC8376 /* ImageScrollerEffectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72A7281CC128DD00CC8376 /* ImageScrollerEffectUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD72A71A1CC128DD00CC8376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD72A6FD1CC128DD00CC8376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD72A7041CC128DD00CC8376;
+			remoteInfo = ImageScrollerEffect;
+		};
+		CD72A7251CC128DD00CC8376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD72A6FD1CC128DD00CC8376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD72A7041CC128DD00CC8376;
+			remoteInfo = ImageScrollerEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD72A7051CC128DD00CC8376 /* ImageScrollerEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageScrollerEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72A7081CC128DD00CC8376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD72A70A1CC128DD00CC8376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD72A70D1CC128DD00CC8376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD72A70F1CC128DD00CC8376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD72A7121CC128DD00CC8376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD72A7141CC128DD00CC8376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72A7191CC128DD00CC8376 /* ImageScrollerEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageScrollerEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72A71D1CC128DD00CC8376 /* ImageScrollerEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollerEffectTests.swift; sourceTree = "<group>"; };
+		CD72A71F1CC128DD00CC8376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72A7241CC128DD00CC8376 /* ImageScrollerEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageScrollerEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72A7281CC128DD00CC8376 /* ImageScrollerEffectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollerEffectUITests.swift; sourceTree = "<group>"; };
+		CD72A72A1CC128DD00CC8376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD72A7021CC128DD00CC8376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7161CC128DD00CC8376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7211CC128DD00CC8376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD72A6FC1CC128DD00CC8376 = {
+			isa = PBXGroup;
+			children = (
+				CD72A7071CC128DD00CC8376 /* ImageScrollerEffect */,
+				CD72A71C1CC128DD00CC8376 /* ImageScrollerEffectTests */,
+				CD72A7271CC128DD00CC8376 /* ImageScrollerEffectUITests */,
+				CD72A7061CC128DD00CC8376 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD72A7061CC128DD00CC8376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD72A7051CC128DD00CC8376 /* ImageScrollerEffect.app */,
+				CD72A7191CC128DD00CC8376 /* ImageScrollerEffectTests.xctest */,
+				CD72A7241CC128DD00CC8376 /* ImageScrollerEffectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD72A7071CC128DD00CC8376 /* ImageScrollerEffect */ = {
+			isa = PBXGroup;
+			children = (
+				CD72A7081CC128DD00CC8376 /* AppDelegate.swift */,
+				CD72A70A1CC128DD00CC8376 /* ViewController.swift */,
+				CD72A70C1CC128DD00CC8376 /* Main.storyboard */,
+				CD72A70F1CC128DD00CC8376 /* Assets.xcassets */,
+				CD72A7111CC128DD00CC8376 /* LaunchScreen.storyboard */,
+				CD72A7141CC128DD00CC8376 /* Info.plist */,
+			);
+			path = ImageScrollerEffect;
+			sourceTree = "<group>";
+		};
+		CD72A71C1CC128DD00CC8376 /* ImageScrollerEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD72A71D1CC128DD00CC8376 /* ImageScrollerEffectTests.swift */,
+				CD72A71F1CC128DD00CC8376 /* Info.plist */,
+			);
+			path = ImageScrollerEffectTests;
+			sourceTree = "<group>";
+		};
+		CD72A7271CC128DD00CC8376 /* ImageScrollerEffectUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD72A7281CC128DD00CC8376 /* ImageScrollerEffectUITests.swift */,
+				CD72A72A1CC128DD00CC8376 /* Info.plist */,
+			);
+			path = ImageScrollerEffectUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD72A7041CC128DD00CC8376 /* ImageScrollerEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72A72D1CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffect" */;
+			buildPhases = (
+				CD72A7011CC128DD00CC8376 /* Sources */,
+				CD72A7021CC128DD00CC8376 /* Frameworks */,
+				CD72A7031CC128DD00CC8376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageScrollerEffect;
+			productName = ImageScrollerEffect;
+			productReference = CD72A7051CC128DD00CC8376 /* ImageScrollerEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD72A7181CC128DD00CC8376 /* ImageScrollerEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72A7301CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffectTests" */;
+			buildPhases = (
+				CD72A7151CC128DD00CC8376 /* Sources */,
+				CD72A7161CC128DD00CC8376 /* Frameworks */,
+				CD72A7171CC128DD00CC8376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD72A71B1CC128DD00CC8376 /* PBXTargetDependency */,
+			);
+			name = ImageScrollerEffectTests;
+			productName = ImageScrollerEffectTests;
+			productReference = CD72A7191CC128DD00CC8376 /* ImageScrollerEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD72A7231CC128DD00CC8376 /* ImageScrollerEffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72A7331CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffectUITests" */;
+			buildPhases = (
+				CD72A7201CC128DD00CC8376 /* Sources */,
+				CD72A7211CC128DD00CC8376 /* Frameworks */,
+				CD72A7221CC128DD00CC8376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD72A7261CC128DD00CC8376 /* PBXTargetDependency */,
+			);
+			name = ImageScrollerEffectUITests;
+			productName = ImageScrollerEffectUITests;
+			productReference = CD72A7241CC128DD00CC8376 /* ImageScrollerEffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD72A6FD1CC128DD00CC8376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CoderYLiu;
+				TargetAttributes = {
+					CD72A7041CC128DD00CC8376 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 342VP95RM8;
+					};
+					CD72A7181CC128DD00CC8376 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 342VP95RM8;
+						TestTargetID = CD72A7041CC128DD00CC8376;
+					};
+					CD72A7231CC128DD00CC8376 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 342VP95RM8;
+						TestTargetID = CD72A7041CC128DD00CC8376;
+					};
+				};
+			};
+			buildConfigurationList = CD72A7001CC128DD00CC8376 /* Build configuration list for PBXProject "ImageScrollerEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD72A6FC1CC128DD00CC8376;
+			productRefGroup = CD72A7061CC128DD00CC8376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD72A7041CC128DD00CC8376 /* ImageScrollerEffect */,
+				CD72A7181CC128DD00CC8376 /* ImageScrollerEffectTests */,
+				CD72A7231CC128DD00CC8376 /* ImageScrollerEffectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD72A7031CC128DD00CC8376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72A7131CC128DD00CC8376 /* LaunchScreen.storyboard in Resources */,
+				CD72A7101CC128DD00CC8376 /* Assets.xcassets in Resources */,
+				CD72A70E1CC128DD00CC8376 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7171CC128DD00CC8376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7221CC128DD00CC8376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD72A7011CC128DD00CC8376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72A70B1CC128DD00CC8376 /* ViewController.swift in Sources */,
+				CD72A7091CC128DD00CC8376 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7151CC128DD00CC8376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72A71E1CC128DD00CC8376 /* ImageScrollerEffectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72A7201CC128DD00CC8376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72A7291CC128DD00CC8376 /* ImageScrollerEffectUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD72A71B1CC128DD00CC8376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD72A7041CC128DD00CC8376 /* ImageScrollerEffect */;
+			targetProxy = CD72A71A1CC128DD00CC8376 /* PBXContainerItemProxy */;
+		};
+		CD72A7261CC128DD00CC8376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD72A7041CC128DD00CC8376 /* ImageScrollerEffect */;
+			targetProxy = CD72A7251CC128DD00CC8376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD72A70C1CC128DD00CC8376 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72A70D1CC128DD00CC8376 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD72A7111CC128DD00CC8376 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72A7121CC128DD00CC8376 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD72A72B1CC128DD00CC8376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD72A72C1CC128DD00CC8376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD72A72E1CC128DD00CC8376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageScrollerEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD72A72F1CC128DD00CC8376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageScrollerEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD72A7311CC128DD00CC8376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ImageScrollerEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageScrollerEffect.app/ImageScrollerEffect";
+			};
+			name = Debug;
+		};
+		CD72A7321CC128DD00CC8376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ImageScrollerEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageScrollerEffect.app/ImageScrollerEffect";
+			};
+			name = Release;
+		};
+		CD72A7341CC128DD00CC8376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ImageScrollerEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImageScrollerEffect;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CD72A7351CC128DD00CC8376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ImageScrollerEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.ImageScrollerEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImageScrollerEffect;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD72A7001CC128DD00CC8376 /* Build configuration list for PBXProject "ImageScrollerEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72A72B1CC128DD00CC8376 /* Debug */,
+				CD72A72C1CC128DD00CC8376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD72A72D1CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72A72E1CC128DD00CC8376 /* Debug */,
+				CD72A72F1CC128DD00CC8376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD72A7301CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72A7311CC128DD00CC8376 /* Debug */,
+				CD72A7321CC128DD00CC8376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD72A7331CC128DD00CC8376 /* Build configuration list for PBXNativeTarget "ImageScrollerEffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72A7341CC128DD00CC8376 /* Debug */,
+				CD72A7351CC128DD00CC8376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD72A6FD1CC128DD00CC8376 /* Project object */;
+}

@@ -60,7 +60,7 @@ Project 07 - ![PullToRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/ma
 1）UIRefreshController 来实现下拉刷新，可以改背景色，菊花颜色，文字颜色和大小等；
 
 
-Project 09 - ![RandomColorization](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2008%20-%20RandomGradientColorMusic/RandomColorization.gif)
+Project 08 - ![RandomColorization](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2008%20-%20RandomGradientColorMusic/RandomColorization.gif)
 
 1）实现了背景渐变色的随机变换，顺带的背景音乐播放；
 
@@ -68,6 +68,14 @@ Project 09 - ![RandomColorization](https://github.com/CoderYLiu/30DaysOfSwift/bl
 
 3）后一层是实现原理就是随机变化纯色即可，对 RGB三色进行了赋值，比如 redValue = CGFloat(drand48())，这样整个背景颜色可以在256个颜色里随机变化；
 
+
+Project 09 - ![ImageScrollerEffect](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2009%20-ImageScroller/ImageScrollerEffect.gif)
+
+1）放大缩小和水平垂直滚动查看图片大图，类似在 iMessage 里查看图片一样的效果；
+
+2）先是套 UIImageView 到 UIScrollView 里，在 setZoomScaleFor(srollViewSize:CGSize)，最大缩放指为原图的3倍；
+
+3）最后回到最初界面的中心，recenterImage()；
 
 
 ## What's next? ##
