@@ -77,7 +77,7 @@ Project 09 - ![ImageScrollerEffect](https://github.com/CoderYLiu/30DaysOfSwift/b
 
 3）最后回到最初界面的中心，recenterImage()；
 
-Project 11 - ![Video Background](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2010%20-%20VideoBackground/Videobg.gif)
+Project 10 - ![Video Background](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2010%20-%20VideoBackground/Videobg.gif)
 
 1）一个酷炫的且不是很大的视频作为Splash 界面的背景元素，是足以让用户第一时间感受到这个应用的场景和价值，Spotify 就是个很好的例子，里面用到的素材也是来自 Spotify for iOS；
 
@@ -88,6 +88,9 @@ Project 11 - ![Video Background](https://github.com/CoderYLiu/30DaysOfSwift/blob
 4）记得视频文件始终要 copy 到 bundle resources 里去；
 
 
+Project 11 - ![ClearTableViewCell](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2011%20-%20ClearTableViewCell/ClearTableViewCell.gif)
+
+1）Clear App 的界面和交互非常的惊艳，已经惊艳了好几年了，所以这次想实现一下梯度渐变色的 TableView，当然不仅只是单色，还增加了cell 内的渐变色
 
 ## What's next? ##
 
