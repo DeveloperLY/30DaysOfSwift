@@ -1,0 +1,14 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "LaunchImage-800-Portrait-736h@3x.png",
+      "unassigned" : true,
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

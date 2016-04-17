@@ -77,6 +77,17 @@ Project 09 - ![ImageScrollerEffect](https://github.com/CoderYLiu/30DaysOfSwift/b
 
 3）最后回到最初界面的中心，recenterImage()；
 
+Project 11 - ![Video Background](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2010%20-%20VideoBackground/Videobg.gif)
+
+1）一个酷炫的且不是很大的视频作为Splash 界面的背景元素，是足以让用户第一时间感受到这个应用的场景和价值，Spotify 就是个很好的例子，里面用到的素材也是来自 Spotify for iOS；
+
+2）这次是用了一个自定义 VC: VideoSplashViewController，可以方便的使用到AVPlayerViewController里东西；
+
+3）fillMode = .ResizeAspectFill，然后就是始终是 loop 的：alwaysRepeat=true；
+
+4）记得视频文件始终要 copy 到 bundle resources 里去；
+
+
 
 ## What's next? ##
 
