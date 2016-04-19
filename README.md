@@ -92,6 +92,12 @@ Project 11 - ![ClearTableViewCell](https://github.com/CoderYLiu/30DaysOfSwift/bl
 
 1）Clear App 的界面和交互非常的惊艳，已经惊艳了好几年了，所以这次想实现一下梯度渐变色的 TableView，当然不仅只是单色，还增加了cell 内的渐变色
 
+
+Project 12 - ![LoginAnimation](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2012%20-%20LoginAnimation/LoginAnimation.gif)
+
+
+Project 13 - ![AnimateTabel](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2013%20-%20AnimateTableViewCell/AnimateTabel.gif)
+
 ## What's next? ##
 
 Build a camera app.
