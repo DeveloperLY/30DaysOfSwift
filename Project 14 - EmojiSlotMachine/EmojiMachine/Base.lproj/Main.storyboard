@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmojiMachine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hyperspace - iPhone" translatesAutoresizingMaskIntoConstraints="NO" id="qCa-om-KkG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WC-Hl-xNu">
+                                <rect key="frame" x="0.0" y="192" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="G7p-fV-6gN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fFM-HV-9Kv"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-k2-OOk">
+                                <rect key="frame" x="30" y="438" width="540" height="45"/>
+                                <color key="backgroundColor" red="0.71489375829696655" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0wR-gQ-ywr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goButtoDidClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nkI-aP-efl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xo-Ek-tg3">
+                                <rect key="frame" x="0.0" y="563" width="600" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7xo-Ek-tg3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0gK-7r-mZK"/>
+                            <constraint firstItem="7xo-Ek-tg3" firstAttribute="top" secondItem="vdc-k2-OOk" secondAttribute="bottom" constant="80" id="7hu-EL-h8I"/>
+                            <constraint firstAttribute="trailing" secondItem="2WC-Hl-xNu" secondAttribute="trailing" id="9YD-gm-dPN"/>
+                            <constraint firstItem="qCa-om-KkG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ecu-h1-v6t"/>
+                            <constraint firstItem="qCa-om-KkG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ISx-WY-2aw"/>
+                            <constraint firstItem="2WC-Hl-xNu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rgj-WL-2yQ"/>
+                            <constraint firstItem="vdc-k2-OOk" firstAttribute="top" secondItem="2WC-Hl-xNu" secondAttribute="bottom" constant="30" id="diP-F2-Wdx"/>
+                            <constraint firstItem="vdc-k2-OOk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="gey-Oi-I5H"/>
+                            <constraint firstAttribute="bottom" secondItem="qCa-om-KkG" secondAttribute="bottom" id="gqr-6B-lKJ"/>
+                            <constraint firstAttribute="trailing" secondItem="7xo-Ek-tg3" secondAttribute="trailing" id="hlI-5z-QM6"/>
+                            <constraint firstAttribute="trailing" secondItem="qCa-om-KkG" secondAttribute="trailing" id="mee-AS-FWR"/>
+                            <constraint firstAttribute="trailing" secondItem="vdc-k2-OOk" secondAttribute="trailing" constant="30" id="nE3-Do-tBf"/>
+                            <constraint firstItem="2WC-Hl-xNu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yOF-Hh-uka"/>
+                            <constraint firstItem="2WC-Hl-xNu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z8O-Jp-CE1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emojiPickerView" destination="2WC-Hl-xNu" id="RSh-vT-4ju"/>
+                        <outlet property="goButton" destination="vdc-k2-OOk" id="Sfp-fu-5kH"/>
+                        <outlet property="resultLabel" destination="7xo-Ek-tg3" id="SJh-Il-hZf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hyperspace - iPhone" width="621" height="1104"/>
+    </resources>
+</document>
