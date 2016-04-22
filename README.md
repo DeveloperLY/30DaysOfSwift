@@ -102,7 +102,12 @@ Project 13 - ![AnimateTabel](https://github.com/CoderYLiu/30DaysOfSwift/blob/mas
 Project 14 - ![EmojiMachine](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2014%20-%20EmojiSlotMachine/EmojiMachine.gif)
 
 
-Project 15 - ![AnimatedSplash](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2014%20-%20EmojiSlotMachine/EmojiMachine.gif)
+Project 15 - ![AnimatedSplash](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2015%20-%20%20AnimatedSplash/AnimatedSplash.gif)
+
+
+Project 16 - ![SlideMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2016%20-%20SlideMenu/SlideMenu.gif)
+
+
 ## What's next? ##
 
 Build a camera app.
