@@ -110,6 +110,8 @@ Project 16 - ![SlideMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master
 
 Project 17 - ![TumblrMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2017%20-%20TumblrMenu/TumblrMenu.gif)
 
+Project 18 - ![LimitCharacters](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2018%20-%20LimitCharacters/LimitCharacters.gif)
+
 ## What's next? ##
 
 Build a camera app.
