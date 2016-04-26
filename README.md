@@ -116,6 +116,9 @@ Project 18 - ![LimitCharacters](https://github.com/CoderYLiu/30DaysOfSwift/blob/
 
 Project 19 - ![PullRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2019%20-%20CustomPullToRefresh/PullRefresh.gif)
 
+
+Project 20 - ![PullRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2020%20-%20CollectionViewAnimation/CollectionViewAnimation.gif)
+
 ## What's next? ##
 
 Build a camera app.
