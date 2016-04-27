@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD72E3781CD1051100E70A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72E3771CD1051100E70A57 /* AppDelegate.swift */; };
+		CD72E37A1CD1051100E70A57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72E3791CD1051100E70A57 /* ViewController.swift */; };
+		CD72E37D1CD1051100E70A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD72E37B1CD1051100E70A57 /* Main.storyboard */; };
+		CD72E37F1CD1051100E70A57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD72E37E1CD1051100E70A57 /* Assets.xcassets */; };
+		CD72E3821CD1051100E70A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD72E3801CD1051100E70A57 /* LaunchScreen.storyboard */; };
+		CD72E38D1CD1051200E70A57 /* SwipeableCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72E38C1CD1051200E70A57 /* SwipeableCellTests.swift */; };
+		CD72E3981CD1051200E70A57 /* SwipeableCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72E3971CD1051200E70A57 /* SwipeableCellUITests.swift */; };
+		CD72E3A61CD105E100E70A57 /* PatternCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD72E3A51CD105E100E70A57 /* PatternCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD72E3891CD1051100E70A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD72E36C1CD1051100E70A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD72E3731CD1051100E70A57;
+			remoteInfo = SwipeableCell;
+		};
+		CD72E3941CD1051200E70A57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD72E36C1CD1051100E70A57 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD72E3731CD1051100E70A57;
+			remoteInfo = SwipeableCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD72E3741CD1051100E70A57 /* SwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72E3771CD1051100E70A57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD72E3791CD1051100E70A57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD72E37C1CD1051100E70A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD72E37E1CD1051100E70A57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD72E3811CD1051100E70A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD72E3831CD1051100E70A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72E3881CD1051100E70A57 /* SwipeableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72E38C1CD1051200E70A57 /* SwipeableCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCellTests.swift; sourceTree = "<group>"; };
+		CD72E38E1CD1051200E70A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72E3931CD1051200E70A57 /* SwipeableCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD72E3971CD1051200E70A57 /* SwipeableCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableCellUITests.swift; sourceTree = "<group>"; };
+		CD72E3991CD1051200E70A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD72E3A51CD105E100E70A57 /* PatternCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatternCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD72E3711CD1051100E70A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E3851CD1051100E70A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E3901CD1051200E70A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD72E36B1CD1051100E70A57 = {
+			isa = PBXGroup;
+			children = (
+				CD72E3761CD1051100E70A57 /* SwipeableCell */,
+				CD72E38B1CD1051100E70A57 /* SwipeableCellTests */,
+				CD72E3961CD1051200E70A57 /* SwipeableCellUITests */,
+				CD72E3751CD1051100E70A57 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD72E3751CD1051100E70A57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD72E3741CD1051100E70A57 /* SwipeableCell.app */,
+				CD72E3881CD1051100E70A57 /* SwipeableCellTests.xctest */,
+				CD72E3931CD1051200E70A57 /* SwipeableCellUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD72E3761CD1051100E70A57 /* SwipeableCell */ = {
+			isa = PBXGroup;
+			children = (
+				CD72E3771CD1051100E70A57 /* AppDelegate.swift */,
+				CD72E3791CD1051100E70A57 /* ViewController.swift */,
+				CD72E3A51CD105E100E70A57 /* PatternCell.swift */,
+				CD72E37B1CD1051100E70A57 /* Main.storyboard */,
+				CD72E37E1CD1051100E70A57 /* Assets.xcassets */,
+				CD72E3801CD1051100E70A57 /* LaunchScreen.storyboard */,
+				CD72E3831CD1051100E70A57 /* Info.plist */,
+			);
+			path = SwipeableCell;
+			sourceTree = "<group>";
+		};
+		CD72E38B1CD1051100E70A57 /* SwipeableCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD72E38C1CD1051200E70A57 /* SwipeableCellTests.swift */,
+				CD72E38E1CD1051200E70A57 /* Info.plist */,
+			);
+			path = SwipeableCellTests;
+			sourceTree = "<group>";
+		};
+		CD72E3961CD1051200E70A57 /* SwipeableCellUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD72E3971CD1051200E70A57 /* SwipeableCellUITests.swift */,
+				CD72E3991CD1051200E70A57 /* Info.plist */,
+			);
+			path = SwipeableCellUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD72E3731CD1051100E70A57 /* SwipeableCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72E39C1CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCell" */;
+			buildPhases = (
+				CD72E3701CD1051100E70A57 /* Sources */,
+				CD72E3711CD1051100E70A57 /* Frameworks */,
+				CD72E3721CD1051100E70A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableCell;
+			productName = SwipeableCell;
+			productReference = CD72E3741CD1051100E70A57 /* SwipeableCell.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD72E3871CD1051100E70A57 /* SwipeableCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72E39F1CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */;
+			buildPhases = (
+				CD72E3841CD1051100E70A57 /* Sources */,
+				CD72E3851CD1051100E70A57 /* Frameworks */,
+				CD72E3861CD1051100E70A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD72E38A1CD1051100E70A57 /* PBXTargetDependency */,
+			);
+			name = SwipeableCellTests;
+			productName = SwipeableCellTests;
+			productReference = CD72E3881CD1051100E70A57 /* SwipeableCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD72E3921CD1051200E70A57 /* SwipeableCellUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD72E3A21CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCellUITests" */;
+			buildPhases = (
+				CD72E38F1CD1051200E70A57 /* Sources */,
+				CD72E3901CD1051200E70A57 /* Frameworks */,
+				CD72E3911CD1051200E70A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD72E3951CD1051200E70A57 /* PBXTargetDependency */,
+			);
+			name = SwipeableCellUITests;
+			productName = SwipeableCellUITests;
+			productReference = CD72E3931CD1051200E70A57 /* SwipeableCellUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD72E36C1CD1051100E70A57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CoderYLiu;
+				TargetAttributes = {
+					CD72E3731CD1051100E70A57 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CD72E3871CD1051100E70A57 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CD72E3731CD1051100E70A57;
+					};
+					CD72E3921CD1051200E70A57 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CD72E3731CD1051100E70A57;
+					};
+				};
+			};
+			buildConfigurationList = CD72E36F1CD1051100E70A57 /* Build configuration list for PBXProject "SwipeableCell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD72E36B1CD1051100E70A57;
+			productRefGroup = CD72E3751CD1051100E70A57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD72E3731CD1051100E70A57 /* SwipeableCell */,
+				CD72E3871CD1051100E70A57 /* SwipeableCellTests */,
+				CD72E3921CD1051200E70A57 /* SwipeableCellUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD72E3721CD1051100E70A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72E3821CD1051100E70A57 /* LaunchScreen.storyboard in Resources */,
+				CD72E37F1CD1051100E70A57 /* Assets.xcassets in Resources */,
+				CD72E37D1CD1051100E70A57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E3861CD1051100E70A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E3911CD1051200E70A57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD72E3701CD1051100E70A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72E37A1CD1051100E70A57 /* ViewController.swift in Sources */,
+				CD72E3A61CD105E100E70A57 /* PatternCell.swift in Sources */,
+				CD72E3781CD1051100E70A57 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E3841CD1051100E70A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72E38D1CD1051200E70A57 /* SwipeableCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD72E38F1CD1051200E70A57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD72E3981CD1051200E70A57 /* SwipeableCellUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD72E38A1CD1051100E70A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD72E3731CD1051100E70A57 /* SwipeableCell */;
+			targetProxy = CD72E3891CD1051100E70A57 /* PBXContainerItemProxy */;
+		};
+		CD72E3951CD1051200E70A57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD72E3731CD1051100E70A57 /* SwipeableCell */;
+			targetProxy = CD72E3941CD1051200E70A57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD72E37B1CD1051100E70A57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72E37C1CD1051100E70A57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD72E3801CD1051100E70A57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD72E3811CD1051100E70A57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD72E39A1CD1051200E70A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD72E39B1CD1051200E70A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD72E39D1CD1051200E70A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwipeableCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CD72E39E1CD1051200E70A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwipeableCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCell;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CD72E3A01CD1051200E70A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwipeableCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeableCell.app/SwipeableCell";
+			};
+			name = Debug;
+		};
+		CD72E3A11CD1051200E70A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwipeableCellTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwipeableCell.app/SwipeableCell";
+			};
+			name = Release;
+		};
+		CD72E3A31CD1051200E70A57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwipeableCellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwipeableCell;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CD72E3A41CD1051200E70A57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwipeableCellUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.SwipeableCellUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwipeableCell;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD72E36F1CD1051100E70A57 /* Build configuration list for PBXProject "SwipeableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72E39A1CD1051200E70A57 /* Debug */,
+				CD72E39B1CD1051200E70A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD72E39C1CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72E39D1CD1051200E70A57 /* Debug */,
+				CD72E39E1CD1051200E70A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD72E39F1CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72E3A01CD1051200E70A57 /* Debug */,
+				CD72E3A11CD1051200E70A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD72E3A21CD1051200E70A57 /* Build configuration list for PBXNativeTarget "SwipeableCellUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD72E3A31CD1051200E70A57 /* Debug */,
+				CD72E3A41CD1051200E70A57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD72E36C1CD1051100E70A57 /* Project object */;
+}
