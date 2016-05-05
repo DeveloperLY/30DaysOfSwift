@@ -95,29 +95,84 @@ Project 11 - ![ClearTableViewCell](https://github.com/CoderYLiu/30DaysOfSwift/bl
 
 Project 12 - ![LoginAnimation](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2012%20-%20LoginAnimation/LoginAnimation.gif)
 
+1）一个登陆界面的过渡动画；
+
 
 Project 13 - ![AnimateTabel](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2013%20-%20AnimateTableViewCell/AnimateTabel.gif)
+
+1）TableViewController 之间的TableViewCell 过场动画，TableViewCell 的梯度渐变之间就采用了 Project-11 里的代码；
+
+2）tableView 是有visibleCells的，这样可以先在载入前让 Cells不可见，然后到放到界面最底部然后向上载入上来；
+
+3）这次是用 Spring 动画来实现如此「弹性」的效果：usingSpringWithDamping:0.8, initialSpringVelocity:0，其实也是非常基础的动画；
 
 
 Project 14 - ![EmojiMachine](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2014%20-%20EmojiSlotMachine/EmojiMachine.gif)
 
+1）今天主要是为了 Build for fun，用 UIPickerView 实现了 Emoji 老虎机小游戏；
+
+2）arc4random( )做随机乱排Emoji，三行三列Emoji；
+
+3）分享一个 MacOS 上快速输入 Emoji 的小技巧：按下 Control + Command + 空格键就可以了
+
 
 Project 15 - ![AnimatedSplash](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2015%20-%20%20AnimatedSplash/AnimatedSplash.gif)
+
+1）Twitter 的启动动画一直是个经典，小鸟 Logo 居中停留然后放大带出整个界面，是个令人愉悦的过程；
+
+2）LaunchScreen.storyboard 设定好View 的蓝色背景和放入Twitter 小鸟的图，代码是写在AppDelegate 里的；
 
 
 Project 16 - ![SlideMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2016%20-%20SlideMenu/SlideMenu.gif)
 
+1）特别没有使用三条杠的Hamburger icon，而是真用了一个汉堡 Emoji 🍔来做菜单图标:)
+
+2）2个 VC，用 Segue 做转场，自建 MenuTransitionManagerDelegate 协议，在第一个 VC 里引入，moveDown 到 container!.frame.height -150 这个位置，选中Menu 后第二个 VC 就moveUp 到 -50 的位置；
+
+3）增加 UITapGestureRecognizer，可以点击非 MenuTableViewCell 部分也可以 dismiss;
+
 
 Project 17 - ![TumblrMenu](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2017%20-%20TumblrMenu/TumblrMenu.gif)
+
+1）这个是 Tumblr 老版本iOS 内创建新 Post 的转场动画，新版本有了更炫的新动画；
+
+2）跟 Project 16 一样也是2个 VC，1个 MenuTransitionManager 来实现的，看来这是实现 VC 之间转场动画（同时保留上一层 VC）的「标准方式」？
+
+3）连了13个 IBOutlet 也是醉了，因为图标和文字都可以按 Delay 时间不同时候出现依次出现，在 MenuTransitionManager 引入 UIViewControllerTransitioningDelegate 来实现动画，包括背景模糊透明透出第一个 VC；
+
+4）Menu 其实是分为三组，设定 topRowOffset middleRowOffset bottomRowOffset 分别为 CGFloat 300 150 50，所以在 transform 时 Text 和 Photo 为 self.offstage(-topRowOffset) 和 self.offstage(topRowOffset)依次对应，下面2组也是同理；
 
 
 Project 18 - ![LimitCharacters](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2018%20-%20LimitCharacters/LimitCharacters.gif)
 
+1）限定 UITextView 输入字符，跟 Twitter 微博一样做140字的限制，然后就无法再输得动了，一开始是 UITextField 尝试，发现不能换行，屁啊，赶紧换到 UITextView 来；
+
+2）底部一行 UIView 在 viewDidLoad()里做了2个 NSNotificationCenter，通知随着键盘上升和 dismiss；
+
+3）利用 UITextViewDelegate 里的shouldChangeTextInRange方法来实现输入字符的限制，如果 range.length >140就输入不可用，最右小角的实时字符倒数即使用 "\(140- myTextViewString.characters.count)"来实现；
+
+4）UI Copy 自第三方 Twitter 客户端 Twitterrific；
+
 
 Project 19 - ![PullRefresh](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2019%20-%20CustomPullToRefresh/PullRefresh.gif)
 
+1）在 Project 7 时我做了下拉刷新和加载出数据，但是下拉刷新的样式还是系统的菊花样式，所以这次进行自定义下拉刷新的尝试，用单个文字变色旋转和放大的简单动画；
+
+2）新建RefreshContents.xib 专门来放刷新用的12个 UILabels，不用连接到 ViewController，用 viewWithTag()来指定；
+
+3）刷新动画分为两步，所以建了2步的方法，animateRefreshStep1() 和 animateRefreshStep2()，第一步是旋转 CGAffineTransformMakeRotation(CGFloat(M_PI_4)) 和 textColor 变随机色 self.getNextColor() （这个是新建的随机色方法），第二步就更为简单了就是做放大动画，全部 Scale 到 CGAffineTransformMakeScale(1.5,1.5)；
+
+4）因为没有真实数据的关系，这个小试验是用 NSTimer.scheduledTimerWithTimeInterval 来稳定5秒做的效果，真实项目里肯定是不用这个的；
+
 
 Project 20 - ![CollectionViewAnimation](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2020%20-%20CollectionViewAnimation/CollectionViewAnimation.gif)
+
+1）啊啊啊啊，这个效果其实挺烂的，但是 UICollectionView 的平滑转场我们应该经常看到，特别是 List 和 Details 之间，比如商品列表和商品详情，新闻列表和新闻全文；
+
+2）这其实是一个 VC，详情界面里只是多了个返回icon，在 func collectionView didSelectItemAtIndexPath 里点击后执行转场动画，把 Cell 带到最前层次 cell?.superview?.bringSubviewToFront(cell!) ，然后 cell?.frame= collectionView.bounds 就可以变大到全屏，通过这个示例也帮助了我理解了 frame 和 bounds 的区别；
+
+3）在 func backButtonDidTouch() 里记得要让 CollectionView reloadItemsAtIndexPaths 一下；
+
 
 
 Project 21 - ![SwipeableCell](https://github.com/CoderYLiu/30DaysOfSwift/blob/master/Project%2021%20-%20SwipeableCell/SwipeableCell.gif)
