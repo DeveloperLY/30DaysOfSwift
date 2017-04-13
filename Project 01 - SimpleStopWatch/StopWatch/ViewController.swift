@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  StopWatch <https://github.com/CoderYLiu/30DaysOfSwift>
+//  StopWatch <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/7.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var counter = 0.0
-    var timer = NSTimer()
+    var timer = Timer()
     var isPlaying = false
     
     /**
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
      
      - returns: 默认/高亮
      */
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func viewDidLoad() {
@@ -40,13 +40,13 @@ class ViewController: UIViewController {
      
      - parameter sender: 重置按钮
      */
-    @IBAction func resetButtonDidClick(sender: UIButton) {
+    @IBAction func resetButtonDidClick(_ sender: UIButton) {
         timer.invalidate()
         isPlaying = false
         counter = 0.0;
         timeLabel.text = String(counter)
-        playButton.enabled = true
-        pauseButton.enabled = true 
+        playButton.isEnabled = true
+        pauseButton.isEnabled = true 
     }
     
     /**
@@ -54,14 +54,14 @@ class ViewController: UIViewController {
      
      - parameter sender: 开始按钮
      */
-    @IBAction func playButtonDidClick(sender: UIButton) {
+    @IBAction func playButtonDidClick(_ sender: UIButton) {
         if (isPlaying) {
             return
         }
-        playButton.enabled = false
-        pauseButton.enabled = true
+        playButton.isEnabled = false
+        pauseButton.isEnabled = true
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("updateTimer"), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.updateTimer), userInfo: nil, repeats: true)
         
         isPlaying = true
     }
@@ -71,9 +71,9 @@ class ViewController: UIViewController {
      
      - parameter sender: 暂停按钮
      */
-    @IBAction func pauseButtonDidClick(sender: UIButton) {
-        playButton.enabled = true
-        pauseButton.enabled = false
+    @IBAction func pauseButtonDidClick(_ sender: UIButton) {
+        playButton.isEnabled = true
+        pauseButton.isEnabled = false
         timer.invalidate()
         isPlaying = false
     }
