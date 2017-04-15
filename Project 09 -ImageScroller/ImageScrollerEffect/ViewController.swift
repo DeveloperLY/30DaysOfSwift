@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  ImageScrollerEffect <https://github.com/CoderYLiu/30DaysOfSwift>
+//  ImageScrollerEffect <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/15.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -40,14 +40,14 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         recenterImage()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
-    private func setUpScrollView() {
+    fileprivate func setUpScrollView() {
         scrollView = UIScrollView(frame: view.bounds)
-        scrollView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        scrollView.backgroundColor = UIColor.clearColor()
+        scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        scrollView.backgroundColor = UIColor.clear
         scrollView.contentSize = imageView.bounds.size
         scrollView.delegate = self;
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         view.addSubview(scrollView)
     }
     
-    private func setZoomScaleFor(srollViewSize: CGSize) {
+    fileprivate func setZoomScaleFor(_ srollViewSize: CGSize) {
         let imageSize = imageView.bounds.size
         let widthScale = srollViewSize.width / imageSize.width
         let heightScale = srollViewSize.height / imageSize.height
@@ -65,7 +65,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.maximumZoomScale = 3.0
     }
     
-    private func recenterImage() {
+    fileprivate func recenterImage() {
         let scrollViewSize = scrollView.bounds.size
         let imageViewSize = imageView.frame.size
         let horizontalSpace = imageViewSize.width < scrollViewSize.width ? (scrollViewSize.width - imageViewSize.width) / 2.0 : 0
@@ -74,11 +74,11 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentInset = UIEdgeInsetsMake(verticalSpace, horizontalSpace, verticalSpace, horizontalSpace)
     }
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         self.recenterImage()
     }
 
