@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  LoginAnimation <https://github.com/CoderYLiu/30DaysOfSwift>
+//  LoginAnimation <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/18.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         loginButton.layer.cornerRadius = 5
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         centerAlignUsername.constant -= view.bounds.width
@@ -40,24 +40,24 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration(0.5, delay: 0.00, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.00, options: UIViewAnimationOptions.curveEaseOut, animations: {
             
             self.centerAlignUsername.constant += self.view.bounds.width
             self.view.layoutIfNeeded()
             
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.10, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.10, options: .curveEaseOut, animations: {
             
             self.centerAlignPassword.constant += self.view.bounds.width
             self.view.layoutIfNeeded()
             
             }, completion: nil)
         
-        UIView.animateWithDuration(0.5, delay: 0.20, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.20, options: .curveEaseOut, animations: {
             
             self.loginButton.alpha = 1
             
@@ -65,24 +65,24 @@ class ViewController: UIViewController {
         
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
 
-    @IBAction func backButtonDidClick(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func backButtonDidClick(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func loginButtonDidClick(sender: UIButton) {
+    @IBAction func loginButtonDidClick(_ sender: UIButton) {
         let bounds = self.loginButton.bounds
         
         // Animate
-        UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.CurveLinear, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10, options: UIViewAnimationOptions.curveLinear, animations: {
             
             self.loginButton.bounds = CGRect(x: bounds.origin.x - 20, y: bounds.origin.y, width: bounds.size.width + 60, height: bounds.size.height)
-            self.loginButton.enabled = false
+            self.loginButton.isEnabled = false
             
-            }, completion: { finished in self.loginButton.enabled = true })
+            }, completion: { finished in self.loginButton.isEnabled = true })
     }
 
 }
