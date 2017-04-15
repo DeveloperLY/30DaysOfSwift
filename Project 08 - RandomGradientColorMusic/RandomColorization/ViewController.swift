@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  RandomColorization <https://github.com/CoderYLiu/30DaysOfSwift>
+//  RandomColorization <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/14.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -23,17 +23,17 @@ class ViewController: UIViewController {
         
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
 
-    @IBAction func playMusicButtonDidClick(sender: UIButton) {
+    @IBAction func playMusicButtonDidClick(_ sender: UIButton) {
         // play bg music
-        let musicURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Ecstasy", ofType: "mp3")!)
+        let musicURL = URL(fileURLWithPath: Bundle.main.path(forResource: "Ecstasy", ofType: "mp3")!)
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
-            try audioPlayer = AVAudioPlayer(contentsOfURL: musicURL)
+            try audioPlayer = AVAudioPlayer(contentsOf: musicURL)
             
             audioPlayer.prepareToPlay()
             audioPlayer.play()
@@ -42,20 +42,20 @@ class ViewController: UIViewController {
             print(aduioError)
         }
         
-        NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: "randomColor", userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(ViewController.randomColor), userInfo: nil, repeats: true)
         
         // graditent color
         gradientLayer.frame = view.bounds
-        let color1 = UIColor(white: 0.5, alpha: 0.2).CGColor as CGColorRef
-        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.4).CGColor as CGColorRef
-        let color3 = UIColor(red: 0, green: 1.0, blue: 0, alpha: 0.3).CGColor as CGColorRef
-        let color4 = UIColor(red: 0, green: 0, blue: 1.0, alpha: 0.3).CGColor as CGColorRef
-        let color5 = UIColor(white: 0.4, alpha: 0.2).CGColor as CGColorRef
+        let color1 = UIColor(white: 0.5, alpha: 0.2).cgColor as CGColor
+        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.4).cgColor as CGColor
+        let color3 = UIColor(red: 0, green: 1.0, blue: 0, alpha: 0.3).cgColor as CGColor
+        let color4 = UIColor(red: 0, green: 0, blue: 1.0, alpha: 0.3).cgColor as CGColor
+        let color5 = UIColor(white: 0.4, alpha: 0.2).cgColor as CGColor
         
         gradientLayer.colors = [color1, color2, color3, color4, color5]
         gradientLayer.locations = [0.10, 0.30, 0.50, 0.70, 0.90]
-        gradientLayer.startPoint = CGPointMake(0, 0)
-        gradientLayer.endPoint = CGPointMake(1, 1)
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         self.view.layer.addSublayer(gradientLayer)
     }
     
