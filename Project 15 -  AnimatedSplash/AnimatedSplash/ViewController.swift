@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  AnimatedSplash <https://github.com/CoderYLiu/30DaysOfSwift>
+//  AnimatedSplash <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/21.
 //  Copyright © 2016年 CoderYLiu. All rights reserved.
