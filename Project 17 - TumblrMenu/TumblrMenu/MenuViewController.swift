@@ -1,9 +1,9 @@
 //
 //  MenuViewController.swift
-//  TumblrMenu <https://github.com/CoderYLiu/30DaysOfSwift>
+//  TumblrMenu <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/23.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -40,9 +40,9 @@ class MenuViewController: UIViewController {
         self.transitioningDelegate = self.transitionManager
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    override var preferredStatusBarStyle : UIStatusBarStyle {
         
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
         
     }
     

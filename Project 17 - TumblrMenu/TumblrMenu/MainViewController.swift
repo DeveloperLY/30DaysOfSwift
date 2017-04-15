@@ -1,9 +1,9 @@
 //
 //  MainViewController.swift
-//  TumblrMenu <https://github.com/CoderYLiu/30DaysOfSwift>
+//  TumblrMenu <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/23.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -16,12 +16,12 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    override var preferredStatusBarStyle : UIStatusBarStyle {
         
-        return UIStatusBarStyle.LightContent
+        return UIStatusBarStyle.lightContent
         
     }
     
@@ -29,8 +29,8 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
-        self.dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func unwindToMainViewController (_ sender: UIStoryboardSegue){
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
