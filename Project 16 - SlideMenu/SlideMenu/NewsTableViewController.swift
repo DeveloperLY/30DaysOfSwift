@@ -1,9 +1,9 @@
 //
 //  NewsTableViewController.swift
-//  SlideMenu <https://github.com/CoderYLiu/30DaysOfSwift>
+//  SlideMenu <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/22.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -15,39 +15,39 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
     
     let menuTransitionManager = MenuTransitionManager()
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Everyday Moments"
-        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         self.view.backgroundColor = UIColor(red:0.062, green:0.062, blue:0.07, alpha:1)
     }
     
     func dismiss() {
-        dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! NewsTableViewCell
         
-        cell.backgroundColor = UIColor.clearColor()
+        cell.backgroundColor = UIColor.clear
         
         if indexPath.row == 0 {
             cell.postImageView.image = UIImage(named: "1")
@@ -79,14 +79,14 @@ class NewsTableViewController: UITableViewController, MenuTransitionManagerDeleg
     }
     
     
-    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
-        let sourceController = segue.sourceViewController as! MenuTableViewController
+    @IBAction func unwindToHome(_ segue: UIStoryboardSegue) {
+        let sourceController = segue.source as! MenuTableViewController
         self.title = sourceController.currentItem
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let menuTableViewController = segue.destinationViewController as! MenuTableViewController
+        let menuTableViewController = segue.destination as! MenuTableViewController
         menuTableViewController.currentItem = self.title!
         menuTableViewController.transitioningDelegate = menuTransitionManager
         menuTransitionManager.delegate = self
