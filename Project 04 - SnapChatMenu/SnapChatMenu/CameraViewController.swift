@@ -1,9 +1,9 @@
 //
 //  CameraViewController.swift
-//  SnapChatMenu <https://github.com/CoderYLiu/30DaysOfSwift>
+//  SnapChatMenu <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/10.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -21,7 +21,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     var stillImageOutput: AVCaptureStillImageOutput?
     var previewLayer: AVCaptureVideoPreviewLayer?
 
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return true
     }
     
@@ -30,19 +30,19 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         previewLayer?.frame = cameraView.bounds
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         captureSession = AVCaptureSession()
         captureSession?.sessionPreset = AVCaptureSessionPreset1920x1080
         
-        let backCamera = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
+        let backCamera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         var error: NSError?
         var input: AVCaptureDeviceInput!
         
@@ -64,7 +64,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 
                 previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
                 previewLayer?.videoGravity = AVLayerVideoGravityResizeAspect
-                previewLayer?.connection.videoOrientation = AVCaptureVideoOrientation.Portrait
+                previewLayer?.connection.videoOrientation = AVCaptureVideoOrientation.portrait
                 cameraView.layer.addSublayer(previewLayer!)
                 captureSession?.startRunning()
             }
@@ -72,17 +72,17 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     
     func didPressTakePhoto() {
-        if let videoConnection = stillImageOutput?.connectionWithMediaType(AVMediaTypeVideo) {
-            videoConnection.videoOrientation = AVCaptureVideoOrientation.Portrait
-            stillImageOutput?.captureStillImageAsynchronouslyFromConnection(videoConnection, completionHandler: { (sampleBuffer, error) -> Void in
+        if let videoConnection = stillImageOutput?.connection(withMediaType: AVMediaTypeVideo) {
+            videoConnection.videoOrientation = AVCaptureVideoOrientation.portrait
+            stillImageOutput?.captureStillImageAsynchronously(from: videoConnection, completionHandler: { (sampleBuffer, error) -> Void in
                 if sampleBuffer != nil {
-                    var imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
-                    var dataProvider  = CGDataProviderCreateWithCFData(imageData)
-                    var cgImageRef = CGImageCreateWithJPEGDataProvider(dataProvider, nil, true, CGColorRenderingIntent.RenderingIntentDefault)
-                    var image = UIImage(CGImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.Right)
+                    let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                    let dataProvider  = CGDataProvider(data: imageData! as CFData)
+                    let cgImageRef = CGImage(jpegDataProviderSource: dataProvider!, decode: nil, shouldInterpolate: true, intent: CGColorRenderingIntent.defaultIntent)
+                    let image = UIImage(cgImage: cgImageRef!, scale: 1.0, orientation: UIImageOrientation.right)
                     
                     self.tempImageView.image = image
-                    self.tempImageView.hidden = false
+                    self.tempImageView.isHidden = false
                 }
             })
         }
@@ -93,7 +93,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     func didPressTakeAnother() {
         if didTakePhoto == true {
-            tempImageView.hidden = true
+            tempImageView.isHidden = true
             didTakePhoto = false
         } else {
             captureSession?.startRunning()
@@ -102,7 +102,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         didPressTakePhoto()
     }
 
