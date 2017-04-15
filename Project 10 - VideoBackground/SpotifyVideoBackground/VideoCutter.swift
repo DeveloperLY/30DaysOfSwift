@@ -1,9 +1,9 @@
 //
 //  VideoCutter.swift
-//  SpotifyVideoBackground <https://github.com/CoderYLiu/30DaysOfSwift>
+//  SpotifyVideoBackground <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/17.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -18,7 +18,7 @@ extension String {
     }
 }
 
-public class VideoCutter: NSObject {
+open class VideoCutter: NSObject {
     /**
      Block based method for crop video url
      
@@ -27,45 +27,45 @@ public class VideoCutter: NSObject {
      @param duration Total time, video length
      
      */
-    public func cropVideoWithUrl(videoUrl url: NSURL, startTime: CGFloat, duration: CGFloat, completion: ((videoPath: NSURL?, error: NSError?) -> Void)?) {
-        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-        dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            let asset = AVURLAsset(URL: url, options: nil)
+    open func cropVideoWithUrl(videoUrl url: URL, startTime: CGFloat, duration: CGFloat, completion: ((_ videoPath: URL?, _ error: NSError?) -> Void)?) {
+        let priority = DispatchQueue.GlobalQueuePriority.default
+        DispatchQueue.global(priority: priority).async {
+            let asset = AVURLAsset(url: url, options: nil)
             let exportSession = AVAssetExportSession(asset: asset, presetName: "AVAssetExportPresetHighestQuality")
-            let paths: NSArray = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
-            var outputURL = paths.objectAtIndex(0) as! String
-            let manager = NSFileManager.defaultManager()
+            let paths: NSArray = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true) as NSArray
+            var outputURL = paths.object(at: 0) as! String
+            let manager = FileManager.default
             do {
-                try manager.createDirectoryAtPath(outputURL, withIntermediateDirectories: true, attributes: nil)
+                try manager.createDirectory(atPath: outputURL, withIntermediateDirectories: true, attributes: nil)
             } catch _ {
             }
-            outputURL = outputURL.convert.stringByAppendingPathComponent("output.mp4")
+            outputURL = outputURL.convert.appendingPathComponent("output.mp4")
             do {
-                try manager.removeItemAtPath(outputURL)
+                try manager.removeItem(atPath: outputURL)
             } catch _ {
             }
             if let exportSession = exportSession as AVAssetExportSession? {
-                exportSession.outputURL = NSURL(fileURLWithPath: outputURL)
+                exportSession.outputURL = URL(fileURLWithPath: outputURL)
                 exportSession.shouldOptimizeForNetworkUse = true
                 exportSession.outputFileType = AVFileTypeMPEG4
                 let start = CMTimeMakeWithSeconds(Float64(startTime), 600)
                 let duration = CMTimeMakeWithSeconds(Float64(duration), 600)
                 let range = CMTimeRangeMake(start, duration)
                 exportSession.timeRange = range
-                exportSession.exportAsynchronouslyWithCompletionHandler { () -> Void in
+                exportSession.exportAsynchronously { () -> Void in
                     switch exportSession.status {
-                    case AVAssetExportSessionStatus.Completed:
-                        completion?(videoPath: exportSession.outputURL, error: nil)
-                    case AVAssetExportSessionStatus.Failed:
+                    case AVAssetExportSessionStatus.completed:
+                        completion?(exportSession.outputURL, nil)
+                    case AVAssetExportSessionStatus.failed:
                         print("Failed: \(exportSession.error)")
-                    case AVAssetExportSessionStatus.Cancelled:
+                    case AVAssetExportSessionStatus.cancelled:
                         print("Failed: \(exportSession.error)")
                     default:
                         print("default case")
                     }
                 }
             }
-            dispatch_async(dispatch_get_main_queue()) {
+            DispatchQueue.main.async {
             }
         }
     }
