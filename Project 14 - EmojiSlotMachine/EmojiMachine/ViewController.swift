@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  EmojiMachine <https://github.com/CoderYLiu/30DaysOfSwift>
+//  EmojiMachine <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/20.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var dataArray1 = [Int]()
     var dataArray2 = [Int]()
     var dataArray3 = [Int]()
-    var bounds: CGRect = CGRectZero
+    var bounds: CGRect = CGRect.zero
     
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         bounds = goButton.bounds
         imageArray = ["👻","👸","💩","😘","🍔","🤖","🍟","🐼","🚖","🐷"]
         
-        for (var i = 0; i < 100; i++) {
+        for _ in 0 ..< 100 {
             dataArray1.append((Int)(arc4random() % 10 ))
             dataArray2.append((Int)(arc4random() % 10 ))
             dataArray3.append((Int)(arc4random() % 10 ))
@@ -43,17 +43,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         goButton.layer.cornerRadius = 6
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         goButton.alpha = 0
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        UIView.animateWithDuration(0.5, delay: 0.3, options: .CurveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: .curveEaseOut, animations: {
             
             self.goButton.alpha = 1
             
@@ -61,18 +61,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     var test = 1
     
-    @IBAction func goButtoDidClick(sender: AnyObject) {
+    @IBAction func goButtoDidClick(_ sender: AnyObject) {
         
         emojiPickerView.selectRow(Int(arc4random()) % 90 + 3, inComponent: 0, animated: true)
         emojiPickerView.selectRow(Int(arc4random()) % 90 + 3, inComponent: 1, animated: true)
         emojiPickerView.selectRow(Int(arc4random()) % 90 + 3, inComponent: 2, animated: true)
         
-        if(dataArray1[emojiPickerView.selectedRowInComponent(0)] == dataArray2[emojiPickerView.selectedRowInComponent(1)] && dataArray2[emojiPickerView.selectedRowInComponent(1)] == dataArray3[emojiPickerView.selectedRowInComponent(2)]) {
+        if(dataArray1[emojiPickerView.selectedRow(inComponent: 0)] == dataArray2[emojiPickerView.selectedRow(inComponent: 1)] && dataArray2[emojiPickerView.selectedRow(inComponent: 1)] == dataArray3[emojiPickerView.selectedRow(inComponent: 2)]) {
             
             resultLabel.text = "Bingo!"
             
@@ -85,31 +85,31 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         // animate
         
-        goButton.transform = CGAffineTransformMakeScale(0.0, 0.0)
-        UIView.animateWithDuration(1.25, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: UIViewAnimationOptions(rawValue: 0), animations: { () -> Void in
-            self.goButton.transform = CGAffineTransformIdentity
+        goButton.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+        UIView.animate(withDuration: 1.25, delay: 0.0, usingSpringWithDamping: 0.3, initialSpringVelocity: 10, options: UIViewAnimationOptions(rawValue: 0), animations: { () -> Void in
+            self.goButton.transform = CGAffineTransform.identity
             }, completion: { (_) -> Void in
-                self.goButton.userInteractionEnabled = true
+                self.goButton.isUserInteractionEnabled = true
         })
     }
 
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 100
     }
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3
     }
     
-    func pickerView(pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
         return 100.0
     }
     
-    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
         return 100.0
     }
     
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         let pickerLabel = UILabel()
         
@@ -122,7 +122,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }
         
         pickerLabel.font = UIFont(name: "Apple Color Emoji", size: 80)
-        pickerLabel.textAlignment = NSTextAlignment.Center
+        pickerLabel.textAlignment = NSTextAlignment.center
         
         return pickerLabel
         
