@@ -1,9 +1,9 @@
 //
 //  AnimateTabelTests.swift
-//  AnimateTabelTests <https://github.com/CoderYLiu/30DaysOfSwift>
+//  AnimateTabelTests <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/19.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -31,7 +31,7 @@ class AnimateTabelTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
