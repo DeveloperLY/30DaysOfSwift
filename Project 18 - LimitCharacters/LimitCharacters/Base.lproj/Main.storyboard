@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,14 +29,14 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                 <state key="normal" title="Close">
-                                    <color key="titleColor" red="0.33495616912841797" green="0.39237439632415771" blue="0.96349853277206421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.26398003101348877" green="0.28012755513191223" blue="0.95261287689208984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE9-Eu-xoK">
                                 <rect key="frame" x="308" y="24" width="49" height="37"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="Tweet">
-                                    <color key="titleColor" red="0.0" green="0.70773535966873169" blue="0.34169080853462219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.086987636983394623" green="0.66566896438598633" blue="0.27202939987182617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emojiself avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Zfd-jO-7DZ">
@@ -51,7 +55,7 @@
                                             <constraint firstAttribute="width" constant="59" id="UYt-cE-OBq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                        <color key="textColor" red="0.33495616912841797" green="0.39237439632415771" blue="0.96349853277206421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.26398003101348877" green="0.28012755513191223" blue="0.95261287689208984" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ow5-as-fNs">
@@ -71,7 +75,7 @@
                                         <state key="normal" image="Search"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="tNZ-hu-rVX" firstAttribute="leading" secondItem="UP2-mA-JeU" secondAttribute="trailing" constant="20" id="742-Wc-Rue"/>
                                     <constraint firstItem="UP2-mA-JeU" firstAttribute="centerY" secondItem="aHJ-hh-d7S" secondAttribute="centerY" id="88S-z6-Ha9"/>
@@ -89,16 +93,16 @@
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-BT-Prg">
                                 <rect key="frame" x="90" y="65" width="271" height="266"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="266" id="mVr-Wg-50c"/>
                                 </constraints>
-                                <color key="textColor" red="0.69267290830612183" green="0.74507147073745728" blue="0.96231824159622192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.63271582126617432" green="0.68240141868591309" blue="0.95182716846466064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13672333955764771" green="0.14483055472373962" blue="0.15649682283401489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10306594520807266" green="0.10858899354934692" blue="0.11729101836681366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fi7-BT-Prg" firstAttribute="leading" secondItem="Zfd-jO-7DZ" secondAttribute="trailing" constant="20" id="2iD-SZ-FuJ"/>
                             <constraint firstItem="Zfd-jO-7DZ" firstAttribute="top" secondItem="Y65-gJ-cNZ" secondAttribute="bottom" constant="11" id="Nrd-Yp-50S"/>
@@ -115,7 +119,6 @@
                             <constraint firstItem="Zfd-jO-7DZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="vEJ-C3-w50"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="avatarImageView" destination="Zfd-jO-7DZ" id="Ttb-KE-K9m"/>
                         <outlet property="bottomUIView" destination="jim-YR-Vj6" id="a0Z-sB-3vJ"/>
@@ -133,6 +136,6 @@
         <image name="GPS" width="24" height="25"/>
         <image name="Paper" width="18" height="24"/>
         <image name="Search" width="24" height="25"/>
-        <image name="emojiself avatar" width="100" height="100"/>
+        <image name="emojiself avatar" width="300" height="300"/>
     </resources>
 </document>

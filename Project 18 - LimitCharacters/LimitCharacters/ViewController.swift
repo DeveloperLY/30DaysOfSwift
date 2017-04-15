@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  LimitCharacters <https://github.com/CoderYLiu/30DaysOfSwift>
+//  LimitCharacters <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/24.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -18,8 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var characterCountLabel: UILabel!
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return UIStatusBarStyle.lightContent
     }
     
     override func viewDidLoad() {
@@ -29,10 +29,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
         
         avatarImageView.layer.cornerRadius = avatarImageView.frame.width / 2
         
-        tweetTextView.backgroundColor = UIColor.clearColor()
+        tweetTextView.backgroundColor = UIColor.clear
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyBoardWillShow:", name:UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector:"keyBoardWillHide:", name:UIKeyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(ViewController.keyBoardWillShow(_:)), name:NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(ViewController.keyBoardWillHide(_:)), name:NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         
     }
@@ -42,10 +42,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
     }
     
     
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         
         let myTextViewString = tweetTextView.text
-        characterCountLabel.text = "\(140 - myTextViewString.characters.count)"
+        characterCountLabel.text = "\(140 - (myTextViewString?.characters.count)!)"
         
         if range.length > 140{
             return false
@@ -59,21 +59,21 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
         
     }
     
-    func keyBoardWillShow(note:NSNotification) {
+    func keyBoardWillShow(_ note:Notification) {
         
         let userInfo  = note.userInfo
-        let keyBoardBounds = (userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let keyBoardBounds = (userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         let duration = (userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         let deltaY = keyBoardBounds.size.height
         let animations:(() -> Void) = {
             
-            self.bottomUIView.transform = CGAffineTransformMakeTranslation(0,-deltaY)
+            self.bottomUIView.transform = CGAffineTransform(translationX: 0,y: -deltaY)
         }
         
         if duration > 0 {
-            let options = UIViewAnimationOptions(rawValue: UInt((userInfo![UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).integerValue << 16))
+            let options = UIViewAnimationOptions(rawValue: UInt((userInfo![UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
             
-            UIView.animateWithDuration(duration, delay: 0, options:options, animations: animations, completion: nil)
+            UIView.animate(withDuration: duration, delay: 0, options:options, animations: animations, completion: nil)
             
         }else {
             
@@ -83,21 +83,21 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
     }
     
     
-    func keyBoardWillHide(note:NSNotification) {
+    func keyBoardWillHide(_ note:Notification) {
         
         let userInfo  = note.userInfo
         let duration = (userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
         
         let animations:(() -> Void) = {
             
-            self.bottomUIView.transform = CGAffineTransformIdentity
+            self.bottomUIView.transform = CGAffineTransform.identity
             
         }
         
         if duration > 0 {
-            let options = UIViewAnimationOptions(rawValue: UInt((userInfo![UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).integerValue << 16))
+            let options = UIViewAnimationOptions(rawValue: UInt((userInfo![UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
             
-            UIView.animateWithDuration(duration, delay: 0, options:options, animations: animations, completion: nil)
+            UIView.animate(withDuration: duration, delay: 0, options:options, animations: animations, completion: nil)
             
         }else{
             
@@ -106,7 +106,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
 
