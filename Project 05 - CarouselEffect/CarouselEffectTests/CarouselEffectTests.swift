@@ -1,6 +1,6 @@
 //
 //  CarouselEffectTests.swift
-//  CarouselEffectTests <https://github.com/CoderYLiu/30DaysOfSwift>
+//  CarouselEffectTests <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/11.
 //  Copyright © 2016年 CoderYLiu. All rights reserved.
@@ -30,7 +30,7 @@ class CarouselEffectTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }
