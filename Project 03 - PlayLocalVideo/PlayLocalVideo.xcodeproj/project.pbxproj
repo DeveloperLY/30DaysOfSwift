@@ -206,20 +206,23 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = CoderYLiu;
+				ORGANIZATIONNAME = DeveloperLY;
 				TargetAttributes = {
 					CDDB10B71CB90A680018FEFA = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 342VP95RM8;
+						LastSwiftMigration = 0830;
 					};
 					CDDB10CB1CB90A680018FEFA = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 342VP95RM8;
+						LastSwiftMigration = 0830;
 						TestTargetID = CDDB10B71CB90A680018FEFA;
 					};
 					CDDB10D61CB90A680018FEFA = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 342VP95RM8;
+						LastSwiftMigration = 0830;
 						TestTargetID = CDDB10B71CB90A680018FEFA;
 					};
 				};
@@ -371,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -409,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -422,8 +425,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayLocalVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.PlayLocalVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -433,8 +437,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PlayLocalVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = net.developerly.PlayLocalVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -446,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayLocalVideo.app/PlayLocalVideo";
 			};
 			name = Debug;
@@ -458,6 +464,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlayLocalVideo.app/PlayLocalVideo";
 			};
 			name = Release;
@@ -469,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PlayLocalVideo;
 				USES_XCTRUNNER = YES;
 			};
@@ -481,6 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderly.PlayLocalVideoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = PlayLocalVideo;
 				USES_XCTRUNNER = YES;
 			};

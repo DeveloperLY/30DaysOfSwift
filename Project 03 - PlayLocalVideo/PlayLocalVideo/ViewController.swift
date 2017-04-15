@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  PlayLocalVideo <https://github.com/CoderYLiu/30DaysOfSwift>
+//  PlayLocalVideo <https://github.com/DeveloperLY/30DaysOfSwift>
 //
 //  Created by Liu Y on 16/4/9.
-//  Copyright © 2016年 CoderYLiu. All rights reserved.
+//  Copyright © 2016年 DeveloperLY. All rights reserved.
 //
 //  This source code is licensed under the MIT-style license found in the
 //  LICENSE file in the root directory of this source tree.
@@ -32,23 +32,23 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.backgroundColor = UIColor.blackColor()
+        self.tableView.backgroundColor = UIColor.black
         
         self.tableView.rowHeight = 220;
         
-        self.tableView.registerNib(UINib(nibName: "VideoCell", bundle: nil), forCellReuseIdentifier:ID)
+        self.tableView.register(UINib(nibName: "VideoCell", bundle: nil), forCellReuseIdentifier:ID)
     }
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = self.tableView.dequeueReusableCellWithIdentifier(ID, forIndexPath: indexPath) as! VideoCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: ID, for: indexPath) as! VideoCell
         
         let video = data[indexPath.row]
         
@@ -59,13 +59,13 @@ class ViewController: UITableViewController {
         cell.cellBackBlock = {
             () -> ()
             in
-            let path = NSBundle.mainBundle().pathForResource("emojiZone", ofType:"mp4")
+            let path = Bundle.main.path(forResource: "emojiZone", ofType:"mp4")
             
-            self.playerView = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+            self.playerView = AVPlayer(url: URL(fileURLWithPath: path!))
             
             self.playViewController.player = self.playerView
             
-            self.presentViewController(self.playViewController, animated: true) {
+            self.present(self.playViewController, animated: true) {
                 self.playViewController.player?.play()
             }
         }
